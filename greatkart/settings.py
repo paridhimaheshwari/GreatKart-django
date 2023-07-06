@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'category',
     'accounts',
     'store',
+    'carts',
 ]
 
 MIDDLEWARE = [
@@ -67,6 +68,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 #added this part so that menu_links can be used by other apps too
                 'category.context_processors.menu_links',
+                'carts.context_processors.counter',
             ],
         },
     },
